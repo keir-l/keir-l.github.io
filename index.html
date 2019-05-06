@@ -1,912 +1,1029 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="author" content="Benaissa Ghrib" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<title>NEW : Retina Ready Vcard Template</title>
-
-<!--Stylesheet-->
-
-<!--[if IE 7]>
-<link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-
-<link href="css/font.css" rel="stylesheet" type="text/css">
-<link href="css/fontello.css" rel="stylesheet" type="text/css">
-<link href="css/base.css" rel="stylesheet" type="text/css">
-<link href="css/skeleton.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link href="css/magnific-popup.css" rel="stylesheet"  />
-
-
-
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<!--[if lt IE 8]>
-<style>
-/* For IE < 8 (trigger hasLayout) */
-.clearfix {
-    zoom:1;
-}
-</style>
-<![endif]-->
-
-
-
-
-
-</head>
-
-<body>
-
-	<!-- Preloader -->
-	<div id="loader">
-	  <div id="loaderInner"></div>
-	</div>
-
-<!--Wrapper-->
-<div id="wrapper">
-
-
-	<!--Header-->
-	<header id="header">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Material CV/Resume/Vcard/Portfolio by Hencework.</title>
+		<meta name="description" content="Matresume is a material CV / Resume / Vcard / Portfolio HTML5 template by hencework." />
+		<meta name="keywords" content="material design, resume, responsive template, cv, multipurpose, portfolio, html5 template, themeforest.net, bootstrap, html5, creative, landing page, sass, clean, design, modern, angular js," />
+		<meta name="author" content="hencework"/>
 		
-		<!--Main header-->
-			<div class="mainHeader">
-				
-				
-				<!--Container-->
-			<div class="container clearfix">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body id="body" data-ng-app="contactApp">
+		
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
+		</div>
+		<!--/Preloader-->
+		
+		<!--Main Wrapper-->
+		<div class="main-wrapper">
+		
+			<!--Bg Image-->
+			<div class="bg-struct bg-img"></div>
+			<!--/Bg Image-->
 			
-			
+			<div class="mdl-js-layout mdl-layout--fixed-header">
 				
-						<!--Navigation-->
-							<nav id="mainNav" >
-								<a href="#" class="mobileBtn" ><i class="icon-menu"></i></a>
+				<!--Top Header-->
+				<header class="mdl-layout__header">
+					<div class="mdl-layout__header-row mdl-scroll-spy-1">
+						<!-- Title -->
+						<a href="index.html"><span class="mdl-layout-title">benjamin</span></a>
+						<div class="mdl-layout-spacer"></div>
+						<ul class="nav mdl-navigation mdl-layout--large-screen-only">
+							<li><a class="mdl-navigation__link" data-scroll href="#body">about</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">skills</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#portfolio_sec">portfolio</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#experience_sec">experience</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#education_sec">education</a></li>
+							<li><span id="blog_drp" class="mdl-navigation__link">blog</span>
+								<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+									data-mdl-for="blog_drp">
+									<li class="mdl-menu__item"><a href="blog-list.html">Blog List</a></li>
+									<li class="mdl-menu__item"><a href="image-blog-post.html">Image Blog Post</a></li>
+									<li class="mdl-menu__item"><a href="gallery-blog-post.html">Gallery Blog Post</a></li>
+									<li class="mdl-menu__item"><a href="youtube-blog-post.html">Youtube Blog Post</a></li>
+									<li class="mdl-menu__item"><a href="vimeo-blog-post.html">Vimeo Blog Post</a></li>
+									<li class="mdl-menu__item"><a href="audio-blog-post.html">Audio Blog Post</a></li>
+								</ul>
+							</li>
+							<li><a class="mdl-navigation__link" data-scroll href="#references_sec">references</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a></li>
+						</ul>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
+						  <i class="material-icons">more_vert</i>
+						</button>
 
-							<ul>
-								<li><a href="#wrapper">Home</a></li>
-								<li><a href="#resume">Resume</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#contact">Contact</a></li>
-
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							data-mdl-for="demo-menu-lower-right">
+							<li class="mdl-menu__item"><a href="#"><i class="zmdi zmdi-download font-red pr-10"></i>Download CV</a></li>
+							<li class="mdl-menu__item"><a href="mailto:benjaminsirje49@company.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Contact Me</a></li>
+							<li class="mdl-menu__item"><a href="callto:12345678910"><i class="zmdi zmdi-phone  font-blue  pr-10"></i>+1 234 567 89 10</a></li>
+						</ul>
+					</div>
+				</header>
+				<!--/Top Header-->
+				
+				<!--Left Sidebar-->
+				<div class="mdl-layout__drawer">
+					<div class="nicescroll-bar">
+						<div class="drawer-profile-wrap">
+							<div class="candidate-img-drawer mt-25 mb-20"></div>
+							<span class="candidate-name block mb-10 text-center">benjamin sirge</span>
+							<ul class="social-icons  mb-30">
+								<li>
+									<a class="facebook-link" href="#">
+										<i id="tt11" class="zmdi zmdi-facebook"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt11">
+											facebook
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="twitter-link" href="#">
+										<i id="tt12" class="zmdi zmdi-twitter"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt12">
+											twitter
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="linkedin-link" href="#">
+										<i id="tt13" class="zmdi zmdi-linkedin"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt13">
+											linkedin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="dribbble-link" href="#">
+										<i id="tt14" class="zmdi zmdi-dribbble"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt14">
+											dribbble
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="instagram-link" href="#">
+										<i id="tt15" class="zmdi zmdi-instagram"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt15">
+											instagram
+										</div>
+									</a>
+								</li>
 							</ul>
-
-							</nav>
-						<!--End navigation-->
-	
-			
-			<!--End container-->
-			</div>
-		<!--End main header-->
-			</div>
-	</header>
-	<!--End header-->
-	
-	
-	<!--End main header-->
-	<section id="about" class="about">
-		
-		<div class="imgAbout"></div>
-		
-		<!--Light grey-->
-		<div class="lightGrey">
-			
-		<!--Container-->
-		<div class="container clearfix">
-			
-			
-<div class="shortBtn "> 
-	<a href="#" class="print">
-		<span>Print My Resume</span>
-		<i class="icon-print-1"></i>	
-	</a>
-		
-	 <a  href="#" class="download" >
-		<span>Download My CV</span>
-		<i class="icon-down-circled "></i>
-	</a> 
-</div>
-					
-		
-		<div class="aboutContent overview row">
-			<div class="aboutTitle">
-				<h1>Johanson Smith<span>Web Designer / Developer</span></h1>
-			</div>
-			
-			<div class="aboutIntro">
-				<h1>A Talented Freelancer Located
-				In Our Lovely Earth</h1>
+						</div>
+						<div class="mdl-scroll-spy-2">
+							<ul class="mdl-navigation">
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
+										<i class="zmdi zmdi-border-color pr-15"></i>
+										<span class="font-capitalize">about</span>
+									</a>
+								</li>	
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
+										<i class="zmdi zmdi-cutlery pr-15"></i>
+										<span class="font-capitalize">skills</span>
+									</a>
+								</li>
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#portfolio_sec">
+										<i class="zmdi zmdi-case pr-15"></i>
+										<span class="font-capitalize">portfolio</span>
+									</a>
+								</li>	
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
+										<i class="zmdi zmdi-shield-check pr-15"></i>
+										<span class="font-capitalize">experience</span>
+									</a>
+								</li>	
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec">
+										<i class="zmdi zmdi-library pr-15"></i>
+										<span class="font-capitalize">education</span>
+									</a>
+								</li>	
+								
+								<li>
+									<a class="mdl-navigation__link border-top-sep" href="javascript:void(0);" data-toggle="collapse" data-target="#blog_dr">
+										<i class="zmdi zmdi-tag-more pr-15"></i>
+										<span class="font-capitalize">blog</span>
+									</a>
+									<ul id="blog_dr" class="collapse collapse-level-1">
+										<li><a class="mdl-navigation__link border-top-sep" href="blog-list.html">Blog List</a></li>
+										<li><a class="mdl-navigation__link border-top-sep" href="image-blog-post.html">Image Blog Post</a></li>
+										<li><a class="mdl-navigation__link border-top-sep" href="gallery-blog-post.html">Gallery Blog Post</a></li>
+										<li><a class="mdl-navigation__link border-top-sep" href="youtube-blog-post.html">Youtube Blog Post</a></li>
+										<li><a class="mdl-navigation__link border-top-sep" href="vimeo-blog-post.html">Vimeo Blog Post</a></li>
+										<li><a class="mdl-navigation__link border-top-sep" href="audio-blog-post.html">Audio Blog Post</a></li>
+									</ul>
+								</li>
+								
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#references_sec">
+										<i class="zmdi zmdi-bookmark pr-15"></i>
+										<span class="font-capitalize">references</span>
+									</a>
+								</li>	
+								
+								<li>
+									<a class="mdl-navigation__link border-top-sep border-bottom-sep" 	data-scroll  href="#contact_sec">
+										<i class="zmdi zmdi-email pr-15"></i>
+										<span class="font-capitalize">contact</span>
+									</a>
+								</li>	
+							</ul>
+						</div>
+						<div class="drawer-footer mt-50 mb-30 text-center">
+							<p class="font-12 mt-10">Hencework &copy; 2017.</p>
+						</div>
+					</div>
+				</div>
+				<!--/Left Sidebar-->
 				
-				<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-					 nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-		</div>
-		
-		</div>
-		<!--End container-->
-		
-		</div>
-		<!--End light grey-->
-		
-		
-		<!--Dark grey-->
-		<div class="darkGrey">
-				<!--Container-->
-				<div class="container clearfix">
-
-				<!--About content-->
-				<div class="aboutContent row">
-					<div class="aboutInfo">
-						<ul>
-						<li><span>Birthdate</span> : 09/04/1982</li>
-						<li><span>Phone</span> : + 123-456-789-456</li>
-						<li><span>Email</span> : support@mutationmedia.net</li>
-						<li><span>Website</span> : www.mutationmedia.com</li>
-						<li><span>Adresse</span> : 1234 Street Road, City Name, IN 567 890.</li>
-						</ul>
+				<!--Main Content-->
+				<div class="main-content relative">
+					<div class="container">
 						
-					</div>
-					
-					<div class="aboutSocial">
-						<ul>
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-gplus"></i></a></li>
-								<li><a href="#"><i class="icon-pinterest"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#"><i class="icon-vimeo"></i></a></li>
-								<li><a href="#"><i class="icon-flickr"></i></a></li>
-						</ul>
-					</div>
-				
-				</div>
-				<!--End about content-->
-				</div>
-				<!--End container-->
-		</div>
-		<!--End dark grey-->
-		
-	</section>
-	<!--End about-->
-	
-	
-	
-	
-	<!--Resume section-->
-	<section id="resume" class="offset section bBottom">
-		
-				
-
-					
-				<!--Container-->
-				<div class="container clearfix">
-					
-					<div class="intro">
-					<h1 class="titleBig">resume</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						 Ut enim ad minim veniam, quis nostrud exercitation .</p>
-					</div>
-					
-					
-						<!--Resume details-->							
-							<div class="eleven columns resumeDetails top">
-								
-							<!--Employment and education-->
-							<div class="employment">
-								
-								<h2 class="titleSmall">My Employment</h2>
-								
-								<!--Em-->
-								<div class="em clearfix">
-									<div class="dtIco">
-										<span class="ico"><i class="icon-suitcase"></i></span>
-										<span class="date">2005-2013</span>
+						<!--About Sec-->
+						<section class="about-sec mt-180 mt-sm-120  mb-30">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="row">
+											<div class="col-md-5 col-xs-12 mb-30">
+												<div class="candidate-img mb-35"></div>
+												<ul class="social-icons">
+													<li>
+														<a class="facebook-link" href="#">
+															<i id="tt1" class="zmdi zmdi-facebook"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt1">
+																facebook
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="twitter-link" href="#">
+															<i id="tt2" class="zmdi zmdi-twitter"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt2">
+																twitter
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="linkedin-link" href="#">
+															<i id="tt3" class="zmdi zmdi-linkedin"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt3">
+																linkedin
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="dribbble-link" href="#">
+															<i id="tt4" class="zmdi zmdi-dribbble"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt4">
+																dribbble
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="instagram-link" href="#">
+															<i id="tt5" class="zmdi zmdi-instagram"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt5">
+																instagram
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-7 col-xs-12">
+												<div class="info-wrap">
+													<h1>benjamin sirge</h1>
+													<h5 class="mt-20 font-grey">UI/UX Designer & Front End Developer</h5>
+													<div class="mt-30">
+														<a id="download_cv" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white mr-10" href="#">download cv</a>
+														<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white" href="#contact_sec" data-scroll>contact</a>
+													</div>
+												</div>
+												<ul class="profile-wrap mt-50">
+													<li>
+														<div class="profile-title">age</div>
+														<div class="profile-desc">24</div>
+													</li>
+													<li>
+														<div class="profile-title">address</div>
+														<div class="profile-desc">
+															Glenlake St. Mays Landing, NJ 08330
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">email</div>
+														<div class="profile-desc">
+															benjaminsirje49@matresume.com
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">phone</div>
+														<div class="profile-desc">
+															+1 234 56 78 90
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">freelance</div>
+														<div class="profile-desc relative">Available
+															<i id="datepickopn" class="zmdi zmdi-calendar-check font-green pl-5"></i>
+															<div id='datepicker1' class='datepicker'></div>
+														</div>
+														
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
-									
-									<div class="det">
-										<h3>WebDesigner <span>– Mutation Media</span> </h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-											 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								</div>	
+							</div>
+						</section>
+						<!--/About Sec-->		
+						
+						<!--Skills Sec-->
+						<section id="skills_sec" class="skills-sec sec-pad-top-sm">
+							<div class="row">
+								<div class="col-sm-6 mb-30">
+									<h2 class="mb-30">technical skills</h2>
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="mb-30">
+											<span class="progress-cat">Photoshop CS</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="60"></span>
+													</div>
+												</div>	
+											</div>
+										</div>	
+										<div class="mb-30">
+											<span class="progress-cat">Illustrator CS</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap green-bar">
+														<span data-width="90"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">Sketch</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap yellow-bar">
+														<span data-width="50"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
 									</div>
 								</div>
-								<!--End em-->
-								
-								
-									<!--Em-->
-									<div class="em clearfix">
-										<div class="dtIco">
-											<span class="ico"><i class="icon-suitcase"></i></span>
-											<span class="date">2005-2013</span>
-										</div>
-
-										<div class="det">
-											<h3>WebDeveloper <span>– Mutation Media</span> </h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-												 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-										</div>
-									</div>
-									<!--End em-->
-									
-									<!--Em-->
-									<div class="em clearfix">
-										<div class="dtIco">
-											<span class="ico"><i class="icon-suitcase"></i></span>
-											<span class="date">2005-2013</span>
-										</div>
-
-										<div class="det">
-											<h3>SDK Developer <span>– Mutation Media</span> </h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-												 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-										</div>
-									</div>
-									<!--End em-->
-								
-								
-							</div>
-							
-							
-							
-							
-								<div class="education">
-
-									<h2 class="titleSmall">My Education</h2>
-
-									<!--Ed-->
-									<div class="ed clearfix">
-										<div class="dtIco">
-											<span class="ico"><i class="icon-graduation-cap"></i></span>
-											<span class="date">2005-2013</span>
-										</div>
-
-										<div class="det">
-											<h3>Bachelor Degree <span>– Mutation Media</span> </h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-												 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-										</div>
-									</div>
-									<!--End ed-->
-
-
-										<!--Ed-->
-										<div class="ed clearfix">
-											<div class="dtIco">
-												<span class="ico"><i class="icon-graduation-cap"></i></span>
-												<span class="date">2005-2013</span>
-											</div>
-
-											<div class="det">
-												<h3>Master Degree <span>– Mutation Media</span> </h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-											</div>
-										</div>
-										<!--End ed-->
-
-										<!--Ed-->
-										<div class="ed clearfix">
-											<div class="dtIco">
-												<span class="ico"><i class="icon-graduation-cap"></i></span>
-												<span class="date">2005-2013</span>
-											</div>
-
-											<div class="det">
-												<h3>WebDesigner <span>– Mutation Media</span> </h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-											</div>
-										</div>
-										<!--End ed-->
-
-
-								</div>	
-							
-							
-							<!--End employment and education-->
-								
-							</div>
-						<!--End resume details-->
-						
-						
-						
-							<!--Skills-->							
-								<div class="five columns skills top">
-									
-									<!--Widget-->
-									<div class="widget">
-										<h2 class="titleSmall">Programming Skills</h2>
-										<ul class="skillsList clearfix">
-											<li>
-												<h4>html</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>css</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>jquery</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>php</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>wordpress</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>xcode</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											
-										</ul>
-										
-									</div>
-									<!--End widget-->
-									
-									<!--Widget-->
-									<div class="widget">
-										<h2 class="titleSmall">Graphic Skills</h2>
-										<ul class="skillsList clearfix">
-											<li>
-												<h4>photoshop</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>illustrator</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>fireworks</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>indesign</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>3dmax</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											
-										</ul>
-										
-									</div>
-									<!--End widget-->
-									
-									
-									
-									<!--Widget-->
-									<div class="widget">
-										<h2 class="titleSmall">Language Skills</h2>
-										<ul class="skillsList clearfix">
-											<li>
-												<h4>English</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>French</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											<li>
-												<h4>German</h4>
-												<div class="rating">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>
-												<span class="transparent"></span>	
-												</div>
-											</li>
-											
-												<li>
-													<h4>spanish</h4>
-													<div class="rating">
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span class="transparent"></span>
-													<span class="transparent"></span>	
+								<div class="col-sm-6 mb-30">
+									<h2 class="mb-30">soft skills</h2>
+										<div class="mdl-card mdl-shadow--2dp">
+										<div class="mb-30">
+											<span class="progress-cat">Communication</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="80"></span>
 													</div>
-												</li>
-											
-										</ul>
+												</div>	
+											</div>
+										</div>	
+										<div class="mb-30">
+											<span class="progress-cat">Language</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap green-bar">
+														<span data-width="95"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">General Knowledge</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap yellow-bar">
+														<span data-width="90"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Skills Sec-->
+						
+						<!--Profile Sec-->
+						<section id="profile_sec" class="profile-sec sec-pad-top-sm">
+							<h2 class="mb-30">what i do</h2>
+							<div class="row">
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
+										<h4 class="mb-15">user interface</h4>
+										<p>A mobile first responsive template with material design.</p>
 										
 									</div>
-									<!--End widget-->
-									
-									
-										<!--Widget-->
-										<div class="widget">
-											<h2 class="titleSmall">Personal Skills</h2>
-											<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-												 laboris nisi ut aliquip ex ea commodo consequat. </p>
-												
-											<ul class="pList">
-												<li><i class="icon-ok"></i>Responsible</li>
-												<li><i class="icon-ok"></i>diligence</li>
-												<li><i class="icon-ok"></i>Labour</li>
-												<li><i class="icon-ok"></i>Rigor</li>
-												<li><i class="icon-ok"></i>Creative</li>
-												<li><i class="icon-ok"></i>Funny</li>
-												<li><i class="icon-ok"></i>Great Communicator</li>
-												<li><i class="icon-ok"></i>Flexible</li>
-											</ul>
-											
-										</div>	
-										<!--End widget-->
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
+										<h4 class="mb-15">branding</h4>										
+										<p>Comes with light and dark options. Suitable for the universe.</p>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-comments font-yellow profile-icon"></i>
+										<h4 class="mb-15">communication</h4>
+										<p>Extra ordinary setting pannel with lots of awesome features.</p>
 										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-grain font-red profile-icon"></i>
+										<h4 class="mb-15">strategy</h4>
+										<p>Easy customizable framework using bootstrap sass.</p>
 										
-										<div class="getCv">
-											<a href="#"><i class="icon-down-circled"></i>
-											<h3>Download My CV</h3>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Profile Sec-->
+						
+						<!--Portfolio Sec-->
+						<section id="portfolio_sec" class="portfolio-sec sec-pad-top-sm">
+							<div class="mb-15">
+								<h2 class="pull-left float-none-xs">portfolio</h2>
+								<div class="filter-wrap pull-right float-none-xs">
+									<!-- Portfolio Filters --> 
+									<ul id="filters">
+										<li><a id="all" href="#" data-filter="*" class="active">all</a></li>	
+										<li><a href="#" data-filter=".branding">branding</a></li>
+										<li><a href="#" data-filter=".design">design</a></li>
+										<li><a href="#" data-filter=".photography">photo</a></li>
+										<li><a href="#" data-filter=".web">web</a></li>
+									</ul>
+									<!--/Portfolio Filters -->
+									<div class="clearfix"></div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="gallery-wrap mb-30">
+								<div class="portfolio-wrap project-gallery">
+									<ul id="portfolio" class="portf auto-construct  project-gallery" data-col="3">
+										<li  class="item mdl-card mdl-shadow--2dp pa-0 branding">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery1.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">good morning</span>
+											</div>	
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_1" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										<li class="item mdl-card mdl-shadow--2dp pa-0  photography">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery2.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">Grand Canyon</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_2" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										<li class="item mdl-card mdl-shadow--2dp pa-0 design">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery3.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">iceland</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_3" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery4.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">serenity</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										
+										<li class="item mdl-card mdl-shadow--2dp pa-0 design">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery5.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">world seize day</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_5" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										<li class="item mdl-card mdl-shadow--2dp pa-0 branding">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="img/gallery6.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">green bugs</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_6" href="#"><i class="zmdi zmdi-eye"></i></a>
+												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
+											</span>
+										</li>
+										
+									</ul>
+									<!-- Hidden video div -->
+									<div style="display:none;" id="video1">
+										<video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+											<source src="video/video1.mp4" type="video/webm">
+											<source src="video/video1.webm" type="video/webm">
+											 Your browser does not support HTML5 video.
+										</video>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Portfolio Sec-->
+					
+						<!--Interest Sec-->
+						<section id="interest_sec" class="interest-sec sec-pad-top-sm">
+							<h2 class="mb-30">interests</h2>
+							<div class="row">
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-radio"></i>
+										<span>music</span>
+									</div>
+								</div>	
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-smartphone-ring"></i>
+										<span>gaming</span>
+									</div>
+								</div>	
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-camera"></i>
+										<span>photography</span>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-library"></i>
+										<span>reading</span>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-airplane"></i>
+										<span>traveling</span>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+									<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+										<i class="zmdi zmdi-dribbble"></i>
+										<span>sports</span>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Interest Sec-->
+						
+						<!--Experience Sec-->
+						<section id="experience_sec" class="experience-sec sec-pad-top-sm">
+							<h2 class="mb-30">experience</h2>
+							<div class="timeline-wrap  overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-case font-blue"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">UI/UX Designer</h4>
+												<span class="duration mb-5">Mar 2014 - present</span>
+												<span class="institution">Fakebook</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+											</div>
+										</div>
+									</li>
+									
+									<li class="timeline-inverted">
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-format-color-text font-green"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Art Director</h4>
+												<span class="duration mb-5">Jul 2013 — Mar 2014</span>
+												<span class="institution">hencework</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-city-alt font-yellow"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Graphic Designer</h4>
+												<span class="duration mb-5">Jan 2013 – Jul 2013</span>
+												<span class="institution">Sagmeester</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+											</div>
+										</div>
+									</li>
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						<!--/Experience Sec-->
+						
+						<!--Education Sec-->
+						<section id="education_sec" class="education-sec sec-pad-top-sm">
+							<h2 class="mb-30">education</h2>
+							<div class="timeline-wrap overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">master of computer science</h4>
+												<span class="duration mb-5">2014 - 2016</span>
+												<span class="institution">stakford university</span>
+											</div>
+										</div>
+									</li>
+									
+									<li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Master Of Art</h4>
+												<span class="duration mb-5">2012 - 2014</span>
+												<span class="institution">Cedarglen University</span>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="timeline-badge bg-yellow no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Bachelor Of Culture</h4>
+												<span class="duration mb-5">2009 - 2012</span>
+												<span class="institution">Crowmont Design School</span>
+											</div>
+										</div>
+									</li>
+									<li class="timeline-inverted">
+										<div class="timeline-badge bg-red no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Graphic Design Diploma</h4>
+												<span class="duration mb-5">2008 - 2009</span>
+												<span class="institution">Shorepath Collegiate Institute</span>
+											</div>
+										</div>
+									</li>
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						<!--/Education Sec-->
+						
+						<!--Blog Sec-->
+						<section id="blog_sec" class="blog-sec sec-pad-top-sm">
+							<h2 class="mb-30">blog</h2>
+							<div class="row">
+								<div class="col-sm-4 mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<div class="blog-img blog-1"></div>
+										</div>
+										<div class="mdl-card__supporting-text relative">
+											<span class="blog-cat">travel</span>
+											<a href="youtube-blog-post.html">
+												<h4 class="mt-15 mb-20">Fly High with youtube</h4>
+											</a>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eleifend lacinia...</p>
+											<a href="youtube-blog-post.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-red mdl-shadow--8dp">
+												<i class="zmdi zmdi-youtube-play"></i>
 											</a>
 										</div>
-									
+										<div class="mdl-card__actions mdl-card--border">
+											<span class="blog-post-date inline-block">21.1.17</span>
+											<div class="mdl-layout-spacer"></div>
+											<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect mr-5">
+												<i class="zmdi zmdi-favorite"></i>
+											</button>	
+											<button id ="share_menu_1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+												<i class="zmdi zmdi-share"></i>
+											</button>
+											<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+												data-mdl-for="share_menu_1">
+											  <li class="mdl-menu__item">Facebook</li>
+											  <li class="mdl-menu__item">Twitter</li>
+											  <li class="mdl-menu__item">LinkedIn</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-							<!--End skills-->
+								<div class="col-sm-4 mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<div class="blog-img blog-2"></div>
+										</div>
+										<div class="mdl-card__supporting-text relative">
+											<span class="blog-cat">photography</span>
+											<a href="image-blog-post.html">
+												<h4 class="mt-15 mb-20">Iceland live in images</h4>
+											</a>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eleifend lacinia...</p>
+											<a href="image-blog-post.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-blue mdl-shadow--8dp">
+												<i class="zmdi zmdi-image-o"></i>
+											</a>
+										</div>
+										<div class="mdl-card__actions mdl-card--border">
+											<span class="blog-post-date inline-block">15.1.17</span>
+											<div class="mdl-layout-spacer"></div>
+											<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect mr-5">
+												<i class="zmdi zmdi-favorite"></i>
+											</button>	
+											<button id ="share_menu_2" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+												<i class="zmdi zmdi-share"></i>
+											</button>
+											<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+												data-mdl-for="share_menu_2">
+											  <li class="mdl-menu__item">Facebook</li>
+											  <li class="mdl-menu__item">Twitter</li>
+											  <li class="mdl-menu__item">LinkedIn</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<div class="blog-img blog-3"></div>
+										</div>
+										<div class="mdl-card__supporting-text relative">
+											<span class="blog-cat">science</span>
+											<a href="gallery-blog-post.html">
+												<h4 class="mt-15 mb-20">Grand canyon mysteries</h4>
+											</a>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eleifend lacinia...</p>
+											<a href="gallery-blog-post.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect bg-green mdl-shadow--8dp">
+												<i class="zmdi zmdi-collection-image-o"></i>
+											</a>
+										</div>
+										<div class="mdl-card__actions mdl-card--border">
+											<span class="blog-post-date inline-block">9.1.17</span>
+											<div class="mdl-layout-spacer"></div>
+											<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect mr-5">
+												<i class="zmdi zmdi-favorite"></i>
+											</button>	
+											<button id ="share_menu_3" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+												<i class="zmdi zmdi-share"></i>
+											</button>
+											<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+												data-mdl-for="share_menu_3">
+											  <li class="mdl-menu__item">Facebook</li>
+											  <li class="mdl-menu__item">Twitter</li>
+											  <li class="mdl-menu__item">LinkedIn</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-20 mb-30">
+								<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  margin-lr-auto view-more" href="blog-list.html">view all</a>
+							</div>	
+						</section>	
+						<!--/Blog Sec-->
 						
+						<!--References Sec-->
+						<section id="references_sec" class="reference-sec sec-pad-top-sm">
+							<h2 class="mb-30">testimonial</h2>
+							<div class="row">
+								<div class="col-sm-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp border-top-yellow pa-35">
+										<div class="testimonial-carousel">
+											<div>
+												<blockquote>"Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto."</blockquote>
+												<span class="ref-name block mb-5 mt-20">john doe</span>
+												<span class="ref-desgn block">Lead Designer in Droffox</span>
+											</div>
+											<div>
+												<blockquote>"Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto."</blockquote>
+												<span class="ref-name block mb-5 mt-20">Shone doe</span>
+												<span class="ref-desgn block">Lead Designer in Fakebook</span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
 						
+						</section>
+						<!--/References Sec-->
+						
+						<!--Client Sec-->
+						<section id="client_sec" class="client-sec sec-pad-top-sm">
+							<div class="row">
+								<div class="col-sm-12 mb-30">
+									<div class="client-carousel">
+										<img src="img/client1.png" alt="client">
+										<img src="img/client2.png" alt="client">
+										<img src="img/client3.png" alt="client">
+										<img src="img/client4.png" alt="client">
+										<img src="img/client5.png" alt="client">
+										<img src="img/client6.png" alt="client">
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Client Sec-->
 					
-
-					</div>
-					<!--End container-->
-		
-		</section>
-			<!--End resume section-->
-			
-			
-			
-			
-	
-												<!--Portfolio section-->
-												<section id="portfolio" class="offset section bBottom">
-
-
-															<!--Inner content-->
-															<div class="innerContent ">
-
-															<!--Container-->
-															<div class="container clearfix">
-																
-
-																<div class="sixteen columns">
-																<h1 class="titleBig">portfolio</h1>
-																</div>
-																
-																
-																<!-- Filter nav -->
-																<div class="filterNav">
-																	<ul id="category" class="filter">
-																		<li class="all current"><a href="#">All</a></li>
-																		<li class="catWeb"><a href="#"> Web Design</a></li>
-																		<li class="catGraphic"><a href="#">Graphic Design</a></li>
-																		<li class="catMotion"><a class="last" href="#">Motion Graphic</a></li>
-																	</ul>
-																	</div>
-																<!-- End filter nav -->
-																
-																	<!-- Works list -->
-																	<div id="works" class="clearfix ">
-																		<!--Portfolio-->
-																			<ul class="portfolio clearfix">
-																				
-
-																<li class="one-third column  item " data-id="id-1" data-type="catWeb">
-																	<div >
-																	<a href="images/portfolioImages/wl1.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; web design &#8213;</span></h3>
-
-																		</div>
-																		<img src="images/portfolioImages/w1.jpg" alt="">
-																	</a>
-
-																</div></li>
-																
-																
-
-																<li class="one-third column  item  " data-id="id-2" data-type="catWeb"><div >
-																	<a href="images/portfolioImages/wl2.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; web design &#8213;</span></h3>
-																		</div>
-																		<img src="images/portfolioImages/w2.jpg" alt="">
-																	</a>
-																</div></li>
-																
-																
-
-																<li class="one-third column  item " data-id="id-3" data-type="catGraphic"><div >
-																	<a href="images/portfolioImages/wl3.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; graphic design &#8213;</span></h3>
-																		</div>
-																		<img src="images/portfolioImages/w3.jpg" alt="">
-																	</a>
-
-																</div>
-																</li>
-
-																<li class="one-third column  item " data-id="id-4" data-type="catGraphic"><div >
-																	<a href="images/portfolioImages/wl4.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; graphic design &#8213;</span></h3>
-																		</div>
-																		<img src="images/portfolioImages/w4.jpg" alt="">
-																	</a>
-																	
-																</div>
-																
-																</li>
-
-																<li  class="one-third column  item " data-id="id-5" data-type="catGraphic"><div>
-																	<a href="images/portfolioImages/wl5.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; graphic design &#8213;</span></h3>
-																		</div>
-																			<img src="images/portfolioImages/w5.jpg" alt="">
-																	</a>
-
-																</div>
-																
-																</li>
-																
-
-																<li class="one-third column  item " data-id="id-6" data-type="catMotion">
-																	<div >
-																	<a href="images/portfolioImages/wl6.jpg" class="folio">
-																		<div class="desc">
-																		<h3 class="projDesc">Project Name <span>&#8213; motion graphic &#8213;</span></h3>
-																		</div>
-																		<img src="images/portfolioImages/w6.jpg" alt="">
-																	</a>
-
-																</div>
-																
-																</li>
-																<li class="one-third column  item " data-id="id-7" data-type="catMotion"><div >
-																		<a href="images/portfolioImages/wl7.jpg" class="folio">
-																			<div class="desc">
-																			<h3 class="projDesc">Project Name <span>&#8213; motion graphic &#8213;</span></h3>
-																			</div>
-																				<img src="images/portfolioImages/w7.jpg" alt="">
-																		</a>
-
-
-																</div>
-																
-																</li>
-																
-																	<li class="one-third column  item " data-id="id-8" data-type="catMotion">
-																		<div >
-																		<a href="images/portfolioImages/wl8.jpg" class="folio">
-																			<div class="desc">
-																			<h3 class="projDesc">Project Name <span>&#8213; motion graphic &#8213;</span></h3>
-																			</div>
-																			<img src="images/portfolioImages/w8.jpg" alt="">
-																		</a>
-
-																	</div>
-
-																	</li>
-																	<li class="one-third column  item " data-id="id-9" data-type="catMotion"><div >
-																			<a href="images/portfolioImages/wl9.jpg" class="folio">
-																				<div class="desc">
-																				<h3 class="projDesc">Project Name <span>&#8213; motion graphic &#8213;</span></h3>
-																				</div>
-																					<img src="images/portfolioImages/w9.jpg" alt="">
-																			</a>
-
-
-																	</div>
-
-																	</li>
-
-																</ul>
-																<!--End portfolio-->
-																</div>
-																	<!-- End works list -->
-
-																</div>
-																<!--End container-->
-
-
-															</div>
-															<!--End inner content-->
-
-										</section>
-										<!--End portfolio section-->
-										
-										
-										
-						<!--Contact section-->
-						<section id="contact" class="offset section">
-
-
-									<!--Inner content-->
-									<div class="innerContent">
-
-									<!--Container-->
-									<div class="container clearfix">
-
-										<div class="sixteen columns">
-										<h1 class="titleBig">contact</h1>
+						<!--Price Sec-->
+						<section id="price_sec" class="price-sec sec-pad-top-sm">
+							<h2 class="mb-30">pricing</h2>
+							<div class="row">
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">basic</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>49</span>
+												<span class="pricing-plan block pt-10">per month</span>
+											</div>	
 										</div>
-
-									
-
-											<div class="sixteen columns contactForm">
-												<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-													 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													 Duis aute irure dolor in reprehenderit in voluptate velit ut et voluptates repudiandae
-													 sint et molestiae non recusandae.</p>
-
-												<div class="cForm">
-												<form method="post" action="send.php">
-
-
-													<p>
-													<label for="name">Name <span class="required">*</span></label>
-											        <input type="text" name="name" id="name">
-													</p>
-
-													<p>
-													<label for="email">Email <span class="required">*</span></label>
-											        <input type="text" name="email" id="email">
-													</p>
-
-
-														<p>
-														<label for="subject">Subject</label>
-												        <input type="text" name="subject" id="subject">
-														</p>
-
-
-
-
-														<p>
-														<label for="subject">Message <span class="required">*</span></label>
-											 <textarea name="message" id="message" cols="45" rows="10"></textarea>
-											</p>
-											        <div class="fBtn"><button id="submit" class="regButton"><i class="icon-paper-plane"></i>Send message</button></div>
-											      </form>
-												<div id="success"><h2>Your message has been sent. Thank you!</h2></div>
-												<div id="error"><h2>Sorry your message can not be sent.</h2></div>
-
-
-											</div>			
-
-
-											</div>
-
-
-
-
-											</div>
-											<!--End container-->
-
-
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+												<li class="list-group-item">1 website</li>
+												<li class="list-group-item">30 GB Storage</li>
+												<li class="list-group-item">Unlimited bandwidth</li>
+												<li class="list-group-item">Free email included</li>
+											</ul>
 										</div>
-										<!--End inner content-->
-
-										</section>
-
-											<!--End contact section-->
-											
-											
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" href="#">buy now</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">standard</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>99</span>
+												<span class="pricing-plan block pt-10">per month</span>
+											</div>	
+										</div>
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+												<li class="list-group-item">1 website</li>
+												<li class="list-group-item">100 GB storage</li>
+												<li class="list-group-item">Unlimited bandwidth</li>
+												<li class="list-group-item">Free domain & email</li>
+											</ul>
+										</div>
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" href="#">buy now</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">business</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>199</span>
+												<span class="pricing-plan block pt-10">per month</span>
+											</div>	
+										</div>
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+												<li class="list-group-item">Unlimited websites</li>
+												<li class="list-group-item">Unlimited storage</li>
+												<li class="list-group-item">Unlimited bandwidth</li>
+												<li class="list-group-item">Free domain & email</li>
+											</ul>
+										</div>
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" href="#">buy now</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+							</div>	
+						</section>
+						<!--/Price Sec-->
 						
-									<!--Footer-->				
-										<footer class="footer  offset">
-
-											<!--Bottom footer-->
-											<div class="footerholder">
-													<!--Container-->
-													<div class="container clearfix">
-
-														<div class="eight columns">
-
-															<p>© 2014 <span class="bLogo">New</span> All Rights Reserved.</p>
-														</div>
-
-
-															<div class="eight columns ">
-														<ul class="socialsFooter">
-															<li><a href="#"><i class="icon-facebook"></i></a></li>
-															<li><a href="#"><i class="icon-twitter"></i></a></li>
-															<li><a href="#"><i class="icon-vimeo"></i></a></li>
-															<li><a href="#"><i class="icon-gplus"></i></a></li>
-															<li><a href="#"><i class="icon-pinterest"></i></a></li>
-
-														</ul>
-
-															</div>
-
+						<!--Contact Sec-->
+						<section id="contact_sec" class="contact-sec sec-pad-top-sm">
+							<h2 class="mb-35">contact</h2>
+							<div class="row">
+								<div id="form_card_height" class="col-sm-7 mb-30">
+									<div  class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
+										<h4 class="mb-10 font-unsetcase">Hey <span  data-ng-bind="formData.inputName||'There'">There</span>, happy to hear from you.</h4>
+										<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class=" form-horizontal mb-30" role="form">
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<input autocomplete="off" data-ng-model="formData.inputName" class="mdl-textfield__input" type="text" id="inputName" name="inputName" required>
+													<label class="mdl-textfield__label" for="inputName">name*</label>
+												</div>	
 											</div>
-												<!--End container-->
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<input autocomplete="off" data-ng-model="formData.inputEmail" class="mdl-textfield__input" type="email" id="inputEmail" name="inputEmail" required>
+													<label class="mdl-textfield__label" for="inputEmail">email*</label>
+												</div>
 											</div>
-												<!--End bottom footer-->
-
-
-										</footer>
-
-							<!--End footer-->
-
-										
-				
-								
-</div>
-<!--ENd wrapper-->
-
-
-
-
-	
-<!--Javascript-->
-<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="js/jquery-migrate-1.2.1.js"></script>
-<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/jquery.scrollTo-min.js" type="text/javascript"></script>
-<script src="js/waypoints.js" type="text/javascript"></script>
-<script src="js/jquery.quicksand.js" type="text/javascript"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
-
-
-<!-- Google analytics -->
-
-
-<!-- End google analytics -->
-
-
-</body>
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<textarea 
+													data-ng-model="formData.inputMessage" 
+													class="mdl-textfield__input"  rows="3" id="inputMessage" name="inputMessage" required></textarea>
+													<label class="mdl-textfield__label" for="inputMessage">message*</label>
+												</div>	
+											</div>
+											<div class="form-group">
+												<div class="align-center">
+													<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-blue font-white" data-ng-disabled="submitButtonDisabled">
+														submit
+													</button>
+												</div>
+											</div>
+										</form>
+										<p class="block result" data-ng-class="result">{{ resultMessage }}</p>
+									</div>
+								</div>
+								<div class="col-sm-5 mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div id="map_canvas"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Contact Sec-->
+						
+						<!--Footer Sec-->
+						<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
+							<h4>thank you for visiting.</h4>
+							<p class="mt-10">Hencework 2017. All rights reserved.</p>
+								<ul class="social-icons mt-10">
+									<li>
+										<a class="facebook-link" href="#">
+											<i id="tt6" class="zmdi zmdi-facebook"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt6">
+												facebook
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="twitter-link" href="#">
+											<i id="tt7" class="zmdi zmdi-twitter"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt7">
+												twitter
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="linkedin-link" href="#">
+											<i id="tt8" class="zmdi zmdi-linkedin"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt8">
+												linkedin
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dribbble-link" href="#">
+											<i id="tt9" class="zmdi zmdi-dribbble"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt9">
+												dribbble
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="instagram-link" href="#">
+											<i id="tt10" class="zmdi zmdi-instagram"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt10">
+												instagram
+											</div>
+										</a>
+									</li>
+								</ul>
+											
+						</footer>
+						<!--Footer Sec-->
+					</div>
+				</div>	
+				<!--/Main Content-->
+							
+			</div>	
+		</div>	
+		<!--/Main Wrapper-->
+		
+		<!-- Scripts -->
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/material.min.js"></script>
+		<script src="js/jQuery.appear.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/lightgallery-all.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/froogaloop2.min.js"></script>
+		<script src="js/jquery.slimscroll.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+		<script src="js/init.js"></script>
+	</body>
 </html>
