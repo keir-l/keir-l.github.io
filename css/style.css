@@ -693,6 +693,12 @@ p {
 .font-blue {
   color: #2879ff !important; }
 
+  .font-purple {
+    color: #5b3069 !important; }
+
+    .font-black {
+      color: #000000 !important; }
+
 .font-yellow {
   color: #fec107 !important; }
 
@@ -725,6 +731,12 @@ p {
 
 .border-top-red {
   border-top: 3px solid #ff3d00; }
+
+.border-top-purple {
+    border-top: 3px solid #5b3069; }
+
+.border-top-black {
+      border-top: 3px solid #000000; }
 
 .font-uppercase {
   text-transform: uppercase; }
